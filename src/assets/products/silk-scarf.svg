@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" rx="40" fill="url(#bg)" />
+  <path d="M170 280c40-90 140-140 210-100s150 160 150 160" fill="#0f172a" stroke="#f8fafc" stroke-width="10" />
+  <path d="M180 280c35-70 125-110 190-80s125 100 125 100" fill="#1f2937" />
+  <path d="M220 300c45-50 120-70 190-40s90 70 90 70" stroke="#f8fafc" stroke-width="12" fill="none" stroke-linecap="round" />
+  <text x="50%" y="430" text-anchor="middle" fill="#f8fafc" font-family="Inter, sans-serif" font-size="42">Silk Scarf</text>
+</svg>

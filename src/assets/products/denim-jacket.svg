@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" rx="40" fill="url(#bg)" />
+  <path d="M160 220c0-70 120-120 180-120s180 45 180 120v130H160z" fill="#0f172a" stroke="#f8fafc" stroke-width="10" />
+  <path d="M220 190l45-60h110l45 60" fill="#1f2937" />
+  <line x1="270" y1="175" x2="270" y2="270" stroke="#f8fafc" stroke-width="8" />
+  <line x1="370" y1="175" x2="370" y2="270" stroke="#f8fafc" stroke-width="8" />
+  <text x="50%" y="430" text-anchor="middle" fill="#f8fafc" font-family="Inter, sans-serif" font-size="42">Denim Jacket</text>
+</svg>

@@ -17,7 +17,7 @@ function Home() {
 
   return (
     <div className="space-y-16 py-10 px-4 sm:px-6 lg:px-8">
-      <section className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] border border-slate-800 bg-slate-900/90 p-8 shadow-[0_30px_100px_-60px_rgba(99,102,241,0.8)] sm:p-12">
+      <section className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] border border-slate-800 bg-slate-900/90 p-8 shadow-[0_30px_100px_-60px_rgba(99,102,241,0.8)] sm:p-12 animate-in fade-in slide-in-from-bottom-8 duration-700">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
           <div className="space-y-8">
             <div className="inline-flex rounded-full bg-slate-800 px-4 py-2 text-sm text-indigo-200 shadow-inner shadow-slate-800/30">
@@ -63,7 +63,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl space-y-8">
+      <section className="mx-auto max-w-7xl space-y-8 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-150 fill-mode-both">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-sm uppercase tracking-[0.28em] text-indigo-400">Trending now</p>
@@ -80,7 +80,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl rounded-[2rem] border border-slate-800 bg-slate-900/90 p-8 shadow-[0_24px_80px_-48px_rgba(99,102,241,0.8)]">
+      <section className="mx-auto max-w-7xl rounded-[2rem] border border-slate-800 bg-slate-900/90 p-8 shadow-[0_24px_80px_-48px_rgba(99,102,241,0.8)] animate-in fade-in slide-in-from-bottom-8 duration-700 delay-300 fill-mode-both">
         <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <div className="space-y-5">
             <h2 className="text-3xl font-semibold text-white">Shop with confidence</h2>

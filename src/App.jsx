@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
       <Navbar />
-      <main className="min-h-[calc(100vh-6rem)]">
+      <main className="min-h-[calc(100vh-7rem)]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />

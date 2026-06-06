@@ -7,7 +7,7 @@ function Footer() {
         <div className="max-w-xl space-y-4">
           <h2 className="text-2xl font-semibold text-white">Nova Market</h2>
           <p className="leading-7 text-slate-400">
-            Clean, modern shopping experience for trend-forward products and everyday essentials.
+            A polished shopping experience with real product imagery, responsive browsing, and persistent cart state.
           </p>
         </div>
         <div className="grid gap-8 sm:grid-cols-3">

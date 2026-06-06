@@ -31,10 +31,14 @@ function Products() {
   )
 
   const filteredProducts = useMemo(() => {
+    const term = search.toLowerCase()
     return products
       .filter((product) => category === 'All' || product.category === category)
-      .filter((product) => product.name.toLowerCase().includes(search.toLowerCase()))
-      .filter((product) => product.description.toLowerCase().includes(search.toLowerCase()) || category === 'All')
+      .filter(
+        (product) =>
+          product.name.toLowerCase().includes(term) ||
+          product.description.toLowerCase().includes(term),
+      )
   }, [category, search])
 
   const sortedProducts = useMemo(() => {
@@ -56,7 +60,7 @@ function Products() {
 
   return (
     <div className="space-y-10 py-10 px-4 sm:px-6 lg:px-8">
-      <section className="mx-auto max-w-7xl rounded-[2rem] border border-slate-800 bg-slate-900/95 p-8 shadow-[0_24px_80px_-48px_rgba(99,102,241,0.8)]">
+      <section className="mx-auto max-w-7xl rounded-[2rem] border border-slate-800 bg-slate-900/95 p-8 shadow-[0_24px_80px_-48px_rgba(99,102,241,0.8)] animate-in fade-in slide-in-from-bottom-8 duration-500">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-indigo-400">Shop</p>
@@ -137,7 +141,7 @@ function Products() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <section className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2 xl:grid-cols-3 animate-in fade-in duration-700 delay-150 fill-mode-both">
         {sortedProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

@@ -6,7 +6,7 @@ const products = [
     price: 129.99,
     rating: 4.8,
     description: 'Premium on-ear headphones with active noise cancellation, long battery life, and rich bass for immersive listening.',
-    image: new URL('../assets/products/headphones.svg', import.meta.url).href,
+    image: '/products/headphones.png',
   },
   {
     id: 'p2',
@@ -15,7 +15,7 @@ const products = [
     price: 199.99,
     rating: 4.6,
     description: 'Track workouts, notifications, and sleep with a sleek smartwatch built for everyday performance.',
-    image: new URL('../assets/products/smartwatch.svg', import.meta.url).href,
+    image: '/products/smartwatch.png',
   },
   {
     id: 'p3',
@@ -24,7 +24,7 @@ const products = [
     price: 89.99,
     rating: 4.7,
     description: 'Lightweight trainers with responsive cushioning and breathable mesh for smooth runs.',
-    image: new URL('../assets/products/sneakers.svg', import.meta.url).href,
+    image: '/products/sneakers.png',
   },
   {
     id: 'p4',
@@ -33,7 +33,7 @@ const products = [
     price: 54.99,
     rating: 4.4,
     description: 'Durable duffel bag with multiple pockets and a comfy shoulder strap for every gym visit.',
-    image: new URL('../assets/products/duffel-bag.svg', import.meta.url).href,
+    image: '/products/duffel_bag.png',
   },
   {
     id: 'p5',
@@ -42,7 +42,7 @@ const products = [
     price: 69.99,
     rating: 4.5,
     description: 'Comfortable lounge wear crafted from a soft stretch blend for relaxed styling at home or on the go.',
-    image: new URL('../assets/products/lounge-set.svg', import.meta.url).href,
+    image: '/products/loungewear.png',
   },
   {
     id: 'p6',
@@ -51,7 +51,7 @@ const products = [
     price: 99.99,
     rating: 4.3,
     description: 'A timeless denim jacket with a tailored fit and subtle contrast stitching for effortless layering.',
-    image: new URL('../assets/products/denim-jacket.svg', import.meta.url).href,
+    image: '/products/denim_jacket.png',
   },
   {
     id: 'p7',
@@ -60,7 +60,7 @@ const products = [
     price: 45.0,
     rating: 4.6,
     description: 'Minimal tabletop lamp with warm LED lighting and a sculptural ceramic base.',
-    image: new URL('../assets/products/table-lamp.svg', import.meta.url).href,
+    image: '/products/table_lamp.png',
   },
   {
     id: 'p8',
@@ -69,7 +69,7 @@ const products = [
     price: 79.99,
     rating: 4.7,
     description: 'Professional-grade knives with ergonomic handles and precision steel blades.',
-    image: new URL('../assets/products/knife-set.svg', import.meta.url).href,
+    image: '/products/kitchen_knives.png',
   },
   {
     id: 'p9',
@@ -78,7 +78,7 @@ const products = [
     price: 229.99,
     rating: 4.2,
     description: 'Plush accent chair with velvet upholstery, tapered legs, and contemporary styling.',
-    image: new URL('../assets/products/accent-chair.svg', import.meta.url).href,
+    image: '/products/accent_chair.png',
   },
   {
     id: 'p10',
@@ -87,7 +87,7 @@ const products = [
     price: 39.99,
     rating: 4.5,
     description: 'Breathable cycling shorts designed for comfort, support, and sweat-wicking performance.',
-    image: new URL('../assets/products/cycling-shorts.svg', import.meta.url).href,
+    image: '/products/cycling_shorts.png',
   },
   {
     id: 'p11',
@@ -96,7 +96,7 @@ const products = [
     price: 79.99,
     rating: 4.3,
     description: 'Smart travel backpack with laptop protection, USB charging port, and water-resistant fabric.',
-    image: new URL('../assets/products/backpack.svg', import.meta.url).href,
+    image: '/products/backpack.png',
   },
   {
     id: 'p12',
@@ -105,7 +105,7 @@ const products = [
     price: 34.99,
     rating: 4.9,
     description: 'Lightweight silk scarf with a rich gradient print that elevates every outfit.',
-    image: new URL('../assets/products/silk-scarf.svg', import.meta.url).href,
+    image: '/products/silk_scarf.png',
   },
 ]
 

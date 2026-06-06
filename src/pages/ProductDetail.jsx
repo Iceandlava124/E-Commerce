@@ -2,11 +2,13 @@ import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import products from '../data/products.js'
 import { useCart } from '../context/CartContext.jsx'
+import { useToast } from '../context/ToastContext.jsx'
 
 function ProductDetail() {
   const { id } = useParams()
   const navigate = useNavigate()
   const { addToCart } = useCart()
+  const { addToast } = useToast()
   const product = products.find((item) => item.id === id)
   const [quantity, setQuantity] = useState(1)
 
@@ -23,16 +25,16 @@ function ProductDetail() {
 
   const handleAdd = () => {
     addToCart(product, quantity)
-    navigate('/cart')
+    addToast(`${quantity} ${product.name} added to cart!`)
   }
 
   return (
     <div className="py-10 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_0.75fr]">
-        <div className="overflow-hidden rounded-[2rem] border border-slate-800 bg-slate-900/95 shadow-[0_24px_80px_-48px_rgba(99,102,241,0.8)]">
+        <div className="overflow-hidden rounded-[2rem] border border-slate-800 bg-slate-900/95 shadow-[0_24px_80px_-48px_rgba(99,102,241,0.8)] animate-in fade-in slide-in-from-left-8 duration-700">
           <img src={product.image} alt={product.name} className="h-[520px] w-full object-cover" />
         </div>
-        <div className="space-y-8 rounded-[2rem] border border-slate-800 bg-slate-950/95 p-8 shadow-lg shadow-slate-950/40">
+        <div className="space-y-8 rounded-[2rem] border border-slate-800 bg-slate-950/95 p-8 shadow-lg shadow-slate-950/40 animate-in fade-in slide-in-from-right-8 duration-700 delay-150 fill-mode-both">
           <div className="space-y-3">
             <p className="text-sm uppercase tracking-[0.3em] text-indigo-400">{product.category}</p>
             <h1 className="text-4xl font-semibold text-white">{product.name}</h1>
